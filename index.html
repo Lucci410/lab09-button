@@ -1,0 +1,143 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Mac & Cheese with Parmesan </h1>
+  </div>
+  <div class="container1">
+    <img src="images/mac.jpg" class="image1" width="200" height="200">   
+  </div>
+  <div class="container4">
+    <h2> The GREATEST Mac & Cheese ever </h2>
+  </div>
+  <div class="container3">
+    <h3> The Ingredients:</h3>
+    <ol>
+      <li> 1 & 1/2 Pounds Macaroni
+      <li> Half pound of American cheese
+      <li> Half pound of Gouda cheese
+      <li> As much parmesan needed
+    </ol>
+  </div>
+  <button onclick="playAudio()">CLICK ME! Listen to how my favorite Mac & Cheese recipe came to be!</button>
+<input type="range" min="0" max="1" step="0.1" value="1" oninput="setVolume(this.value)">
+<audio id="audioPlayer">
+  <source src="recipe123.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function playAudio() {
+  var audio = document.getElementById("audioPlayer");
+  audio.play();
+}
+
+function setVolume(vol) {
+  var audio = document.getElementById("audioPlayer");
+  audio.volume = vol;
+}
+</script>
+  <div class="container1">
+    <h3 class="process-section">The PROCESS:</h3>
+  </div>
+  <ol>
+    <div class="container1">
+      <img src="images/mac2.jpg" class="image2">
+    </div>
+    <li> Combine both cheeses
+    <li> Combine Mac with Cheese
+    <li> Stir Mac & Cheese
+    <li> Cook for 20 minutes then add parmesan
+    <li> Cook for 5 minutes mix then add parmesan
+    <li> Cook for 20 minutes then done
+  </ol>
+  <div class="container2">
+    <p> The reason why this is my favorite Mac & Cheese is because growing up my grandmother use to make this for me all the time. This was her recipe that she would do ever since she came to America. Growing up my grandma was the person I looked up to. She taught me a lot of different things growing up and this recipe has stuck with me. As I know this is a common recipe this is my favorite one. </p>
+    <p>I added a hyperlink that has 5 GREAT Mac & Cheese recipes <a href="https://must-love-garlic.com/5-cheese-baked-mac-cheese/">(Click here)</a>.</p>
+    <form action="submit-form.php" method="post">
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname" required>
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname" required>
+
+  <label for="email">Email Address</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="cuisine">Favorite Cuisines</label>
+  <select id="cuisine" name="cuisine" multiple>
+    <option value="Jamaican">Jamaican</option>
+    <option value="Mexican">Mexican</option>
+    <option value="German">German</option>
+    <option value="Chinese">Chinese</option>
+    <option value="Indian">Indian</option>
+    <option value="Italian">Italian</option>
+    <option value="Thai">Thai</option>
+  </select>
+
+  <label>Subscribe to Mailing List</label>
+  <label for="yes">Yes</label>
+  <input type="radio" id="yes" name="mailing-list" value="yes">
+  <label for="no">No</label>
+  <input type="radio" id="no" name="mailing-list" value="no">
+
+  <div class="button-container">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </div>
+</form>
+  </div>
+  <div class="nutritional-table">
+  <h2>Nutritional Information</h2>
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2">Nutrient</th>
+        <th colspan="2">Amount per serving</th>
+      </tr>
+      <tr>
+        <th>Quantity</th>
+        <th>Daily Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Calories</td>
+        <td>780</td>
+        <td> 24%</td>
+      </tr>
+      <tr>
+        <td>Total Fat</td>
+        <td>8</td>
+        <td> 16%</td>
+      </tr>
+      <tr>
+        <td>Saturated Fat</td>
+        <td>3</td>
+        <td> 22%</td>
+      </tr>
+      <tr>
+        <td>Cholesterol</td>
+        <td>40</td>
+        <td> 15%</td>
+      </tr>
+      <tr>
+        <td>Sodium</td>
+        <td>520</td>
+        <td> 19%</td>
+      </tr>
+      <tr>
+        <td>Total Carbohydrates</td>
+        <td>15</td>
+        <td> 5%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  <h6>
+  Please submit some information for news and more! If you would like to subscribe to our mailing list you can do so on the right side of the screen!
+  </h6>
+</body>
+</html>
